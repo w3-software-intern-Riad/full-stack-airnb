@@ -184,4 +184,7 @@
     .dummyLine{
         display: inline;
     }
+    .meetOurHost{
+        width: 100%;
+    }
 }

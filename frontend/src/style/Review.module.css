@@ -1,5 +1,5 @@
 .reviewSectionLeft {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -290,6 +290,13 @@ button {
     .meetOurHost{
         margin: 0;
         padding: 0;
+        width: 100%;
+    }
+    .reviewTitle{
+       
+        width: 100%;
+    }
+    .hosted{
         width: 100%;
     }
 }

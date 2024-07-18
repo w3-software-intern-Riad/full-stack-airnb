@@ -13,7 +13,7 @@ const Banner = () => {
     }
     return (
         <>
-            <h3 >Comfy New Apt. in Pueblo Libre!</h3>
+            <h3 className={styles.MobileHeading} >Comfy New Apt. in Pueblo Libre!</h3>
             <div className={styles.room_image}>
                 <img id={styles.mobile_banner} src={Bedroom} className={styles.background_image} />
                 <div className={styles.navigation}>
