@@ -122,7 +122,7 @@
 
 
 .fullGallery {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -263,5 +263,9 @@
       }
     .gallerySection {
         display: none;
+    }
+    .fullGallery{
+        height:100%;
+        width: 100%;
     }
 }

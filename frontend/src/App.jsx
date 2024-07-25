@@ -1,22 +1,29 @@
 import { useState } from 'react'
-import Header from './components/HomePage/Header'
-import Banner from './components/HomePage/Banner'
-import Review from './components/HomePage/Review'
-import Footer from './components/HomePage/Footer'
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css'
+import HomePageElement from './components/HomePage/HomePageElement'
+import NotFoundPage from './components/NotFoundPage';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-  <Header/>
-  <Banner/>
-  <Review/>
-  <Footer/>
-
+   
+<BrowserRouter>
+<Routes>
+  {/* Redirect from root path to default path */}
+  <Route path="/" element={<Navigate to="/hotels/Beautiful-Hotel" />} />
+        {/* Define the route for /hotels/:hotelName */}
+        <Route path="/hotels/:hotelName" element={<HomePageElement />} />
+        {/* Optional: A 404 page for unmatched routes */}
+        <Route path="/not-found" element={<NotFoundPage />} /> {/* Explicitly define the 404 route */}
        
-    </>
+</Routes>
+</BrowserRouter>
+     
+
+
   )
 }
 
